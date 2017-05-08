@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lokaverkefni</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<meta charset="utf-8">
+	<script src="js/jquery-3.1.1.js"></script>
+        <script>
+			$(document).ready(function() {
+  			$(window).scroll(function () { 
+
+    		console.log($(window).scrollTop());
+
+    		if ($(window).scrollTop() > 140) {
+      			$('.menu').addClass('nav-scroll');
+    		}
+
+    		if ($(window).scrollTop() < 140) {
+      			$('.menu').removeClass('nav-scroll');
+    		}
+  			});
+			});
+    </script>
+</head>
+<header>
+	<h1><label for="toggle" class="mobile"><strong><i class="fa fa-bars" aria-hidden="true"></i> &ensp;</strong></label>Klúbbakvöld</h1>
+	<div class="menu">
+		<input type="checkbox" id="toggle">
+		<nav class="hiddenmenu">
+			<a data-scroll href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></i><span class="desktop">&ensp;Um</span></a>
+			<a data-scroll href="#dagsetningar"><i class="fa fa-calendar" aria-hidden="true"></i><span class="desktop">&ensp;Dagsetningar</span></a>
+			<a data-scroll href="#klubbar"><i class="fa fa-users" aria-hidden="true"></i><span class="desktop">&ensp;Klúbbar</span></a>
+			<a data-scroll href="#pitsa"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="desktop">&ensp;Pítsupantanir</span></a>
+		</nav>
+	</div>
+</header>
+<body>
+	<div class="body-container">
+		<section class="section-1">
+		<br><br><br><br>
+			<h2>Klúbbakvöld</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+	</div>
+		<picture>
+		  <source media="(max-device-width:1020px)" srcset="img/img1.jpg">
+		  <source media="(min-device-width:1020px)" srcset="img/img1desktop.jpg">
+		  <img src="img/img1.jpg" alt="Mynd tekin úr myndasafni ENIAC" style="width:100%;">
+		</picture>
+	<div class="body-container">
+		<section class="section-2">
+			<span id="dagsetningar" /><br>
+			<h2>Dagsetningar</h2>
+			<table style="width:100%">
+			  <tr>
+			    <th>Viðburður</th>
+			    <th>Staðsetning</th> 
+			    <th>Mánaðardagur</th>
+			    <th>Aðgangseyrir</th>
+			  </tr>
+			  <tr>
+			    <td>Klúbbakvöld #1</td>
+			    <td>Vörðuskóli</td> 
+			    <td>1. febrúar</td>
+			    <td class="aftast">FRÍTT</td>
+			  </tr>
+			  <tr>
+			    <td>Klúbbakvöld #2</td>
+			    <td>Vörðuskóli</td> 
+			    <td>8. febrúar</td>
+			    <td class="aftast">FRÍTT</td>
+			  </tr>
+			  <tr>
+			    <td>Klúbbakvöld #3</td>
+			    <td>Vörðuskóli</td> 
+			    <td>15. febrúar</td>
+			    <td class="aftast">FRÍTT</td>
+			  </tr>
+			  <tr>
+			    <td>Klúbbakvöld #4</td>
+			    <td>Vörðuskóli</td> 
+			    <td>22. febrúar</td>
+			    <td class="aftast">FRÍTT</td>
+			  </tr>
+			  <tr>
+			    <td>Klúbbakvöld #5</td>
+			    <td>Vörðuskóli</td> 
+			    <td>1. mars</td>
+			    <td class="aftast">FRÍTT</td>
+			  </tr>
+			</table>
+		</section>
+	</div>
+		<picture>
+		  <source media="(max-device-width:1020px)" srcset="img/img2.jpg">
+		  <source media="(min-device-width:1020px)" srcset="img/img2desktop.jpg">
+		  <img src="img/img2.jpg" alt="Mynd tekin úr myndasafni ENIAC" style="width:100%;">
+		</picture>
+	<div class="body-container">
+		<section class="section-2">
+			<span id="klubbar" /><br>
+			<h2>Klúbbar</h2>
+			<h3>Forritunarklúbburinn</h3><br>
+<p><strong><i>Formaður: Kormákur Atli</i></strong><br>
+Forritunarklúbbur Tækniskólans er ekki bara fyrir fólk sem kann forritun heldur líka fólk sem vill læra forritun eða hefur almennan áhuga á forritun. Í Forritunarklúbbnum er að sjálfsögðu forritað, borðað og bara straight-up chillað. Á hverju einasta klúbbakvöld býður forritunarklúbburinn upp á stutta fyrirlestra og oft verkefni sem fylgja þeim. Forritunarklúbburinn býður einnig upp á heimanámsaðstoð.</p><br>
+
+<h3>Kvikmyndaklúbburinn</h3><br>
+<p><i><strong>Formaður: Ólafur Hrafn Halldórsson</strong></i><br>
+Kvikmyndaklúbburinn er tilvalinn fyrir áhugamenn kvikmynda. Horft er á myndir á klúbbakvöldum, og haldin umræða eftir´á ef tími finnst til. Allt frá klassískum myndum, og að nýrri mynda eru sýndar. Svo er einnig tekið við tillögum </p><br>
+
+<h3>Spilaklúbburinn</h3><br>
+<p><strong><i>Formaður: Ísak Pétursson</i></strong><br>
+Hefur þú gaman að spilum? Þá er spilaklúbburinn staðurinn fyrir þig! Spilaklúbburinn tekur á móti öllum áhugamönnum spila, byrjendum og fólki sem er lengra komið.</p><br>
+
+<h3>Ostaklúbburinn</h3><br>
+<p><strong><i>Formaður: Maxim Rudkov</i></strong><br>
+Ostaklúbburinn er fyrir áhugamenn osta, eða bara fólk sem er ekki 100% viss um í hvaða klúbb þeim langar mest til þess að hanga. Það er alltaf mjög góð stemning og gott andrúmsloft í Ostaklúbbnum og oft á tíðum fer umræðan út fyrir osta og allir geta tekið virkann þátt í henni.</p><br>
+
+<h3>Minnihlutahópaklúbburinn</h3><br>
+<p><strong><i>Formaður: Pétur Magnús Pétursson</i></strong><br>
+Minnihlutahópaklúbburinn er fyrir fólk sem finnst það ekki passa inn í samfélagið. Fólkið sem flokkast undir minnihluta við ákveðin málefni. Fólkið sem er þreytt á því að samfélagið standi ekki með því.</p>
+		</section>
+	</div>
+		<picture>
+		  <source media="(max-device-width:1020px)" srcset="img/img3.jpg">
+		  <source media="(min-device-width:1020px)" srcset="img/img3desktop.jpg">
+		  <img src="img/img3.jpg" alt="Mynd tekin úr myndasafni ENIAC" style="width:100%;">
+		</picture>
+	<div class="body-container">
+	<span id="pitsa" /><br>
+	<h2>Pítsupantanir</h2>
+	<form>
+	  	<input type="text" name="name" placeholder="Jónas Hallgrímsson"><br><br>
+	  	<input type="text" name="ṕhone" placeholder="821-4539" required maxlength="8"><br><br>
+	  	<select name="alegg1">
+			<option value="ekkert">Álegg -1<i class="fa fa-chevron-down" aria-hidden="true"></i></option>
+			<option value="pepperoni">Pepperoni</option>
+			<option value="cheddar">Cheddar</option>
+			<option value="skinka">Skinka</option>
+		</select>
+		<select style="margin-left:65px" name="alegg1">
+			<option value="ekkert">Álegg -2<i class="fa fa-chevron-down" aria-hidden="true"></i></option>
+			<option value="pepperoni">Pepperoni</option>
+			<option value="cheddar">Cheddar</option>
+			<option value="skinka">Skinka</option>
+		</select>
+		<h4>
+		<input type="checkbox" name="Kantolía">Kantolía</h4><br><br>
+		<input type="submit" name="Klára pöntun" value="Klára pöntun">
+	</form>
+	</div>
+</body>
+<footer>
+<p>a</p>
+</footer>
+<script src="js/smooth-scroll.js"></script>
+<script>smoothScroll.init();</script>
+</html>
