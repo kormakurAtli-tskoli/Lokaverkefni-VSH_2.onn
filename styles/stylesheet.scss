@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Varela+Round');
+*{
+	box-sizing:border-box;
+}
+body{
+	margin: 0;
+	margin-top: 20vh;
+	background-color: #F7F7F2;
+}
+h1{
+	font-size: 7em;
+	text-align: right;
+	font-family: 'Varela Round';
+	color: white;
+	margin: 0;
+	text-align: center;
+	padding: 60px;
+}
+h2{
+	font-size: 6em;
+	font-family: arial;
+}
+h3{
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+}
+h4{
+	font-family: 'Roboto';
+	font-size: 6em;
+	margin: 0;
+}
+header{
+	background-color: #51A3A3;
+	padding: 0;
+	top: 0;
+	height: 14em;
+	width: 100%;
+}
+td{
+	border-right: darken(#51A3A3,15) solid 3px;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: 'Roboto';
+	padding: 10px;
+	border-top: solid rgba(81,163,163,0.2) 1px;
+}
+.aftast{
+	border-right: white solid 0px;
+	color: red;
+	font-weight: bold;
+}
+table{
+	border-collapse: collapse;
+	margin-bottom: 100px;
+}
+th{
+	background-color: #51A3A3;
+	color: white;
+	font-size: 2em;
+	font-family: 'Montserrat';
+}
+footer{
+		background-color: #51A3A3;
+		width: 100%;
+		height: 200px;
+	}
+.section-1,.section-2{
+	padding: 0vh 8vw;
+	p{
+		text-align: justify;
+		font-size: 1.6em;
+		margin: 0;
+		font-family: 'Roboto'
+	}
+}
+.body-container{
+	margin-top: 17em;
+	input,select{
+		outline: none;
+		padding: 20px;
+		font-size: 2em;
+		border: 0px black solid;
+	}
+	select {
+	   -webkit-appearance: none;
+	   -moz-appearance: none;
+	   appearance: none;
+	}
+	option:hover{
+		background-color: #51A3A3;
+	}
+	input[type=submit]:hover{
+		background-color: darkgrey;
+	}
+	input[type=checkbox]{
+		-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid black;
+	padding: 37px;
+	margin: 0;
+	margin-bottom: -4px;
+	border-radius: 0;
+	display: inline-block;
+	position: relative;
+	}
+	input[type=checkbox]:checked{
+		background-color: lightgreen;
+	border: 1px solid black;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+	}
+}
+.menu{
+	text-align: center;
+	margin:auto;
+}
+header{
+input{
+	display: none;
+}}
+label{
+	color: white;
+}
+@media screen and (max-device-width:1020px){
+header{
+	position: fixed;
+}
+.body-container{
+	input{
+		width: 95%;
+		font-size: 6em;
+		margin: auto;
+	}
+	select{
+		font-size: 6em;
+		width: 40%;
+	}
+	input[type=checkbox]{
+		width: 150px;
+		margin-top: 50px;
+		height: 150px;
+		margin-bottom: -8px;
+	}
+	h4{
+		font-size: 12em;
+	}
+}
+.hiddenmenu {
+    position: relative;
+  	left: -20em;
+  	display: inline-block;
+  	top: -5vh;
+  	padding: 3vh 0;
+  	font-size: 6em;
+  	width: 100%;
+  	z-index: 990;
+  	background-color: #51A3A3;
+  	transition: all 0.4s ease;
+  	a{
+  		text-decoration: none;
+  		font-family: 'Poppins';
+  		text-align: center;
+  		padding: 68px;
+  		margin: auto;
+
+  	}
+  	a:active,a:focus{
+ 		color: darken(#51A3A3,15);
+  	}
+  	a:focus,a:active + .hiddenmenu{
+  		left: -20em;
+  	}
+}
+input[type=checkbox]:checked ~ .hiddenmenu {
+    position: relative;
+    left:0;
+    top: -5vh;
+    transition: all 0.4s ease;
+    right: 0;
+    a{
+    	width:100%;
+    	text-align:center;
+    }
+}
+}
+.sub{
+	text-align: center;
+}
+.hiddenmenu{
+	a{
+	color: white;
+	}
+	.current{
+		color: darken(#51A3A3,15);
+	}
+}
+.desktop{
+	display: none;
+}
+@media screen and (min-device-width:1020px){
+	body{
+		margin: 0;
+		h2{
+			font-size: 3em;
+			margin-top: 120px;
+		}
+    	.section-1,.section-2{
+    		padding: 0px;
+    		p{
+				font-size: 1.4em;
+				padding-bottom: 30px;
+			}
+    	}
+    	input[type=submit]{
+    		width:441px;
+    	}
+    	header{
+    		height: 200px;
+    		margin: auto;
+    	}
+    	.desktop{
+    		display: inline;
+    		font-size: 0.8em;
+    	}
+    	.hiddenmenu{
+    		display: block;
+    		position: relative;
+    		top: -70px;
+    		z-index: 99999;
+    		width: 100%;
+    		left: 0;
+    		background-color: #51A3A3;
+    		padding-bottom: 10px;
+    		padding-top: 20px;
+    		right: 0;
+    		a{
+		  		text-decoration: none;
+		  		font-family: 'Varela Round';
+		  		letter-spacing: 0.000000000000001em;
+		  		text-align: center;
+		  		padding: 30px;
+		  		margin: auto;
+		  		font-size: 3em;	
+		  	}
+		  	a:hover{
+		  		color: darken(#51A3A3,15);
+		  	}
+    	}
+    	.mobile{
+    		display: none;
+    	}
+    	h1{
+    		margin-top: -50px;
+    	}
+    }
+    .body-container{
+    	width: 960px;
+    	margin: auto;
+    	padding: 0;
+    }
+    .nav-scroll{
+		position: fixed;
+		top: 60px;
+		width: 100%;
+	}
+}
