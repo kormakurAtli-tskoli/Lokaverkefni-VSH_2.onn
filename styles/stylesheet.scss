@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Varela+Round|Baloo+Bhaina');
 *{
 	box-sizing:border-box;
 }
@@ -37,6 +37,7 @@ header{
 	top: 0;
 	height: 14em;
 	width: 100%;
+	z-index: 99999999;
 }
 td{
 	border-right: darken(#51A3A3,15) solid 3px;
@@ -67,7 +68,7 @@ footer{
 		height: 200px;
 	}
 .section-1,.section-2{
-	padding: 0vh 8vw;
+	padding: 0vh 4vw;
 	p{
 		text-align: justify;
 		font-size: 1.6em;
@@ -118,7 +119,7 @@ footer{
 }
 header{
 input{
-	display: none;
+	display: none; 
 }}
 label{
 	color: white;
@@ -127,15 +128,24 @@ label{
 header{
 	position: fixed;
 }
+.mobileh2{
+	margin-left:5vw;
+}
 .body-container{
+	width: 100%;
 	input{
 		width: 95%;
-		font-size: 6em;
+		font-size: 5em;
 		margin: auto;
 	}
 	select{
-		font-size: 6em;
-		width: 40%;
+		font-size: 5em;
+		margin: auto;
+		width: 46%;
+	}
+	form{
+		width: 90%;
+		margin: auto;
 	}
 	input[type=checkbox]{
 		width: 150px;
@@ -155,7 +165,7 @@ header{
   	padding: 3vh 0;
   	font-size: 6em;
   	width: 100%;
-  	z-index: 990;
+  	z-index: 99999999999;
   	background-color: #51A3A3;
   	transition: all 0.4s ease;
   	a{
@@ -213,6 +223,9 @@ input[type=checkbox]:checked ~ .hiddenmenu {
 				padding-bottom: 30px;
 			}
     	}
+    	select{
+    		font-size: 20px;
+    	}
     	input[type=submit]{
     		width:441px;
     	}
@@ -256,7 +269,7 @@ input[type=checkbox]:checked ~ .hiddenmenu {
     	}
     }
     .body-container{
-    	width: 960px;
+    	max-width: 960px;
     	margin: auto;
     	padding: 0;
     }
@@ -265,4 +278,99 @@ input[type=checkbox]:checked ~ .hiddenmenu {
 		top: 60px;
 		width: 100%;
 	}
+}
+footer{	
+	padding: 40px;
+	.container{
+		max-width:960px;
+		margin: auto;
+		height: 150px;
+		position: relative;
+		background-color: #00cdcd;
+		overflow: hidden;
+		white-space: nowrap;
+		h2{
+			z-index: 99;
+			padding: 0 20px 0 20px;
+			margin: 0;
+			font-family: 'Baloo Bhaina';
+			letter-spacing: 0.15em;
+			font-size: 3em;
+		}
+	}
+	input[type="submit"]{
+		width: 100px;
+	}
+	input{
+		display: inline;
+		border:0;
+		padding: 12px;
+		margin: 0;
+	}
+	form{
+		margin-left: 25px;
+		margin-top: -10px;
+	}
+	input:focus {
+	    outline:none;
+	    background-color: #EDEDED;
+	}
+}
+.texti{
+	animation-name: bunsa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.texti2{
+	animation-name: bonsa;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.right{
+	float: right;
+	margin-top: -65px;
+}
+.email{
+	background-color: white;
+	width: 80px;
+	z-index: 999;
+}
+.image {
+    position: absolute;
+    width: 700px;
+    right: 0;
+    z-index: 1;
+    height: 700px;
+    margin:-160px -260px -160px -160px;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+}
+.image2{
+	position: absolute;
+	right: 230px;
+	bottom: -20px;
+	animation-name: popup;
+    animation-duration: 3s;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes bunsa {
+    0%   {font-size: 0.6em;}
+    50%  {font-size: 1em}
+    100% {font-size: 0.6em;}
+}
+@keyframes popup {
+	0% {bottom: -140px;}
+	100% {bottom: -20px;}
+}
+@keyframes popright {
+	0% {right: -140px;}
+	100% {right: -20px;}
+}
+@keyframes bonsa {
+    0%   {color:white}
+    50%  {color:yellow}
+    100% {color:white}
 }
